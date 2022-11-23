@@ -4,195 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;400;900&display=swap" rel="stylesheet"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function open()
+        {
+            document.querySelector(".links-section").classList.toggle("nav-open");
+        }
+    </script>
 </head>
-    <body style="background-color:black;">
-        <div class="main">
-           
-    <section class="header">
-        <div class="header-body">
-            
-            <div class="desc">
-                <h1>Welcome!</h1>
-                <h2>I Am Web Designer</h2>
-                <p id="bodydesc">I’m a Web Developer with experience for over a year. My expertise is  to create and design websites and many more.....</p>
-                <!-- <img src="./image/pngwala.png" alt=""> -->
-            </div>
-
-        </div>
-        <div class="sidelinebox"></div>
-        <div class="nav">
-            <div class="logo" id="logo">
-                <h1>HI</h1>
-            </div>
-           <div class="links-section">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">service</a></li>
-                <li onmouseover="change()" onmouseout="unchange()"><a id="reds"  href="">port</a><a href="" id="blacks">folio</a></li>
-                <li><a href="" id="black">blog</a></li>
-                <li><a href="" id="black">contact</a></li>
-            </ul>
-           </div>
-        </div>   
-    </section>   
-</div>
-<div class="about-tag">
-    <p>My Story</p>
-</div>
-    
-    <section class="about">
-        <div class="pic-part">
-            <div class="pic-part1"></div> 
-            <div class="pic-part2"></div> 
-        </div>
-        <div class="desc-part">
-            <h3>About</h3>
-            <div class="line"></div>
-            <div class="para">
-                <p>This one-page HTML portfolio is provided by TemplateMo. This layout is based on Bootstrap v5.1.3 CSS and JS libraries. Image credits go to Unsplash and FreePik for images used in this page.</p>
-            <p id="p2">You are allowed to use this template for your websites. You are not allowed to redistribute the template ZIP file on any other website. Please contact us for more info.</p>
-            </div>
-            <button id="btn1"><p id="btn-write">Hire Me</p></button>
-            <button id="btn2"><p id="btn-write2">Download</p></button>
-        </div>
-    </section>
-    <div class="info-tag">
-        <p>My Information</p>
-    </div>
-    <div class="maininfo">
-    <section class="Myinfo">
-        <div class="info-part">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col" colspan="2">Information</th>
-                    <!-- <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th> -->
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Name</th>
-                    <td>Mark</td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">Phone</th>
-                    <td>Jacob</td>
-                   
-                  </tr>
-                  <tr>
-                    <th scope="row">Birthday</th>
-                    <td >Larry the Bird</td>
-                    
-                  </tr>
-                  <tr style="border:none ;">
-                    <th scope="row">Email</th>
-                    <td >Larry the Bird</td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-        <div class="experience-part">
-            <div class="experiencebox">
-            <div class="experience  ">
-                <h3>20+</h1>
-                <span>Years of Experiences</span>
-            </div>
-            <div class="experience1  ">
-                <h3>20+</h1>
-                <span>Years of Experiences</span>
-            </div>
-            <div class="dim-line"></div>
-            <div class="dim-line2"></div>
-            <div class="experience2 ">
-                <h3>20+</h1>
-                <span>Years of Experiences</span>
-            </div>
-            <div class="experience3 ">
-                <h3>20+</h1>
-                <span>Years of Experiences</span>
-            </div>
-        </div>
-        </div>
-    </div>
-    </section>
-    <div class="about-tag">
-        <p>My Service</p>
-    </div>
-            <section class="services">
-                <div class="service-part">
-                    <div class="box1">
-                        <div class="box1-content">
-                             <span>Website</span>
-                        </div>
-                    </div>
-                    <div class="box2">
-                     <div class="box1-content">
-                         <span>Website</span>
-                     </div>
+<body>
+        <nav>
+            <div class="main-navbar">
+                <div class="logo">
+                    <h1>HI</h1>
                 </div>
-            </section>
-            <div class="info-tag">
-                <p>My Information</p>
-            </div>
-            <section class="projects">
-                <div class="project-part">
-                    <div class="project-heading">
-                        <h1>Projects</h1>
-                        <div class="line1"></div>
-
-                        <!-- <p>I’m a Web Developer with experience for over a year. My expertise is  to create and design websites and many more.....</p> -->
-                    </div>
-                    <div class="projects-sample">
-                        <div class="sample1"></div>
-                        <div class="sample1"></div>
-                        <div class="sample1"></div>
-                    </div>
+                <div class="links-section">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">service</a></li>
+                    <li onmouseover="change()" onmouseout="unchange()"><a id="reds"  href="">port</a><a href="" id="blacks">folio</a></li>
+                    <li><a href="" id="black">blog</a></li>
+                    <li><a href="" id="black">contact</a></li>
+                </ul>
                 </div>
-            </section>
+                <button class="btn-mobile-nav" onclick="open();">
+                    <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+                    <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+                </button>
+            </div>
+        </nav>
+        <section class="home-section">
+            <div class="intro-section">
+                    <h1>Welcome!</h1>
+                    <h2 style="padding-top: 80px;">I Am Web Designer</h2>
+                    <p id="bodydesc">I’m a Web Developer with experience for over a year. My expertise is  to create and design websites and many more.....</p>
+                    <!-- <img src="./image/pngwala.png" alt=""> -->
+            </div>
+            <div class="side-bar">
+                <div class="side-bar-photo">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
             <div class="about-tag">
-                <p>My Story</p>
+                <h2>My Story</h2>
             </div>
-            <section class="Contact-us">
-                <div class="contact-heading">
-                    <h1>Contact Us</h1>
-                     <div class="line1"></div>
+            <div class="pic-part">
+                <img src="./image/side pic.png" alt="">
+            </div>
+            <div class="desc-part">
+                <h3>About</h3>
+                <div class="line"></div>
+                <div class="para">
+                    <p>This one-page HTML portfolio is provided by TemplateMo. This layout is based on Bootstrap v5.1.3 CSS and JS libraries. Image credits go to Unsplash and FreePik for images used in this page.</p>
+                <p id="p2">You are allowed to use this template for your websites. You are not allowed to redistribute the template ZIP file on any other website. Please contact us for more info.</p>
                 </div>
-                <div class="contact-us-block">
-                    <h2 id="contact-head">Get In Touch</h2>
-                    <div class="contact-form">
-                        <div class="part-1">
-                        <div class="name-part">
-                            <input type="text">
-                        </div>
-                            <div class="email-part">
-                            <input type="text">
-                                
-                            </div>
-                            <div class="phone-part">
-                            <input type="text">
-
-                        </div>
-                     </div>
-                     <div class="part-2">
-                        <input type="text" id="comment-box">
-                     </div>
-                </div>
-                <button id="btnlast"><p id="">Hire Me</p></button>
-                </div>
-            </section>
-            <section class="footer">
-                <h1>Hello</h1>
-                <p>I’m a Web Developer with experience for over a year. My expertise is  to create and design websites and many more.....</p>
-            </section>
+                <a href="#" class="btn btn-hire">Hire Me</a>
+                <a href="#" class="btn btn-download">Download</a>
+            </div>
+        </section>
 </body>
 </html>
